@@ -1,17 +1,21 @@
 VEICOLO                 | TIPOLOGIA DATO |
 
 id                      | integer        | INT          | NOTNULL | PRIMARYKEY
-marca                   | string         | VARCHAR(20)  | NOTNULL |
+marca                   | string         | VARCHAR(30)  | NOTNULL |
 modello                 | string         | VARCHAR(50)  | NOTNULL |
 kilometraggio           | integer        | MEDIUMINT    | NOTNULL | UNSIGNED
 prezzo                  | integer        | MEDIUMINT    | NOTNULL | UNSIGNED
 posizione               | string         | VARCHAR(100) | NOTNULL |
+anno_immatricolazione   | date           | YEAR         | NOTNULL |
+
+// non andavano in veicolo ma in user
 mail_contatto           | string         | VARCHAR(50)  | NOTNULL |
 numero_contatto         | integer        | VARCHAR(15)  | NULL    |
+//
+
 colore                  | string         | VARCHAR(20)  | NULL    |
 testo_annuncio          | string         | TEXT         | NULL    |
 materiale_interni       | string         | VARCHAR(20)  | NULL    |
-anno_immatricolazione   | date           | YEAR         | NULL    |
 paese_immatricolazione  | string         | VARCHAR(2)   | NULL    |
 cilindrata_cc           | integer        | SMALLINT     | NULL    | UNSIGNED
 potenza                 | integer        | SMALLINT     | NULL    | UNSIGNED
@@ -25,3 +29,6 @@ porte                   | integer        | TINYINT      | NULL    | UNSIGNED
 peso_vuoto_kg           | integer        | SMALLINT     | NULL    | UNSIGNED
 n_proprietari           | integer        | TINYINT      | NULL    | UNSIGNED
 foto                    | string(url)    | TEXT         | NULL    | DEFAULT
+
+
+// per boolean si usa TINYINT
