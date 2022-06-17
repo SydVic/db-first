@@ -3,8 +3,8 @@ VEICOLO                 | TIPOLOGIA DATO |
 id                      | integer        | INT          | NOTNULL | PRIMARYKEY
 marca                   | string         | VARCHAR(20)  | NOTNULL |
 modello                 | string         | VARCHAR(50)  | NOTNULL |
-kilometraggio           | integer        | MEDIUMINT    | NOTNULL |
-prezzo                  | integer        | MEDIUMINT    | NOTNULL |
+kilometraggio           | integer        | MEDIUMINT    | NOTNULL | UNSIGNED
+prezzo                  | integer        | MEDIUMINT    | NOTNULL | UNSIGNED
 posizione               | string         | VARCHAR(100) | NOTNULL |
 mail_contatto           | string         | VARCHAR(50)  | NOTNULL |
 numero_contatto         | integer        | VARCHAR(15)  | NULL    |
@@ -13,15 +13,15 @@ testo_annuncio          | string         | TEXT         | NULL    |
 materiale_interni       | string         | VARCHAR(20)  | NULL    |
 anno_immatricolazione   | date           | YEAR         | NULL    |
 paese_immatricolazione  | string         | VARCHAR(2)   | NULL    |
-cilindrata_cc           | integer        | SMALLINT     | NULL    |
-potenza                 | integer        | SMALLINT     | NULL    |
+cilindrata_cc           | integer        | SMALLINT     | NULL    | UNSIGNED
+potenza                 | integer        | SMALLINT     | NULL    | UNSIGNED
 alimentazione           | string         | VARCHAR(15)  | NULL    |
-consumo                 | float          | FLOAT(3,1)   | NULL    |
+consumo                 | float          | FLOAT(3,1)   | NULL    | UNSIGNED
 allestimento            | string         | VARCHAR(100) | NULL    |
 trazione                | string         | VARCHAR(10)  | NULL    |
 cambio                  | string         | VARCHAR(15)  | NULL    |
-posti                   | integer        | TINYINT      | NULL    |
-porte                   | integer        | TINYINT      | NULL    |
-peso_vuoto_kg           | integer        | SMALLINT     | NULL    |
-n_proprietari           | integer        | TINYINT      | NULL    |
+posti                   | integer        | TINYINT      | NULL    | UNSIGNED
+porte                   | integer        | TINYINT      | NULL    | UNSIGNED
+peso_vuoto_kg           | integer        | SMALLINT     | NULL    | UNSIGNED
+n_proprietari           | integer        | TINYINT      | NULL    | UNSIGNED
 foto                    | string(url)    | TEXT         | NULL    | DEFAULT
