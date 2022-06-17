@@ -1,27 +1,27 @@
 VEICOLO                 | TIPOLOGIA DATO |
 
 id                      | integer        | INT          | NOTNULL | PRIMARYKEY
-marca                   | string         | VARCHAR(20)  | NOTNULL
-modello                 | string         | VARCHAR(50)  | NOTNULL
-kilometraggio           | integer        | MEDIUMINT    | NOTNULL
-prezzo                  | integer        | MEDIUMINT    | NOTNULL
-posizione               | string         | VARCHAR(100) | NOTNULL
-mail_contatto           | string         | VARCHAR(50)  | NOTNULL
-numero_contatto         | integer        | SMALLINT     | NULL
-colore                  | string         | VARCHAR(20)  | NULL
-testo_annuncio          | string         | TEXT         | NULL
-materiale_interni       | string         | VARCHAR(20)  | NULL
-anno_immatricolazione   | date           | YEAR         | NULL
-paese_immatricolazione  | string         | VARCHAR(2)   | NULL
-cilindrata_cc           | integer        | SMALLINT     | NULL
-potenza                 | integer        | SMALLINT     | NULL
-alimentazione           | string         | VARCHAR(15)  | NULL
-consumo                 | float          | FLOAT(3,1)   | NULL
-allestimento            | string         | VARCHAR(100) | NULL
-trazione                | string         | VARCHAR(10)  | NULL
-cambio                  | string         | VARCHAR(15)  | NULL
-posti                   | integer        | TINYINT      | NULL
-porte                   | integer        | TINYINT      | NULL
-peso_vuoto_kg           | integer        | SMALLINT     | NULL
-n_proprietari           | integer        | TINYINT      | NULL
-foto                    | string(url)    | TEXT         | NULL     | DEFAULT
+marca                   | string         | VARCHAR(20)  | NOTNULL |
+modello                 | string         | VARCHAR(50)  | NOTNULL |
+kilometraggio           | integer        | MEDIUMINT    | NOTNULL |
+prezzo                  | integer        | MEDIUMINT    | NOTNULL |
+posizione               | string         | VARCHAR(100) | NOTNULL |
+mail_contatto           | string         | VARCHAR(50)  | NOTNULL |
+numero_contatto         | integer        | VARCHAR(15)  | NULL    |
+colore                  | string         | VARCHAR(20)  | NULL    |
+testo_annuncio          | string         | TEXT         | NULL    |
+materiale_interni       | string         | VARCHAR(20)  | NULL    |
+anno_immatricolazione   | date           | YEAR         | NULL    |
+paese_immatricolazione  | string         | VARCHAR(2)   | NULL    |
+cilindrata_cc           | integer        | SMALLINT     | NULL    |
+potenza                 | integer        | SMALLINT     | NULL    |
+alimentazione           | string         | VARCHAR(15)  | NULL    |
+consumo                 | float          | FLOAT(3,1)   | NULL    |
+allestimento            | string         | VARCHAR(100) | NULL    |
+trazione                | string         | VARCHAR(10)  | NULL    |
+cambio                  | string         | VARCHAR(15)  | NULL    |
+posti                   | integer        | TINYINT      | NULL    |
+porte                   | integer        | TINYINT      | NULL    |
+peso_vuoto_kg           | integer        | SMALLINT     | NULL    |
+n_proprietari           | integer        | TINYINT      | NULL    |
+foto                    | string(url)    | TEXT         | NULL    | DEFAULT
